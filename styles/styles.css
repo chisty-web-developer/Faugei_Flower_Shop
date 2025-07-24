@@ -1,0 +1,274 @@
+/* google fonts added here */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/* shared css sections */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.sectionMargin{
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.headingFonts{
+    font-family: "Noto Serif", serif;
+}
+.headingFontsBlackColor{
+    color: #000000;
+}
+.paragraphFonts{
+    font-family: "Inter", sans-serif;
+}
+
+.paragraphFontsColor{
+    color: rgb(0, 0, 0, 50%)
+}
+.colorOrange{
+    color: #E95A08;
+}
+.defaultPadding{
+    padding: 30px 8%;
+}
+
+
+
+/* shared css section end */
+/* header section started here  */
+    /* navSection started here */
+.logo{
+    max-width: 100%;
+}
+.navParent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navSection{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+.navSection ul{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+
+.navLinks{
+    text-decoration: none;
+}
+.homeLink{
+    font-weight: 700;
+    font-size: 1rem;
+    color: #252432;
+}
+.shopAbout{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #8987A1;
+}
+    /* header section end */
+/* main section start here */
+    /* banner section of main started here */
+.bannerSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.bannerContent{
+    margin-bottom: 10px;
+    width: 50%;
+}
+.bannerTitle{
+    font-weight: 700;
+    font-size: 4.0625rem;
+
+}
+.bannerDescription{
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+.bannerImage{
+    width: 100%;
+}
+    /* banner section ended here */
+    /* our plants section started */
+.ourPlant{
+    text-align: center;
+    margin-top: -80px;
+}
+.ourPlantTitle{
+    font-weight: 700;
+    font-size: 3.125rem;
+}
+.ourPlantDescription{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+    /* our plants section end */
+
+    /* cards section started */
+.cardsSection{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.card{
+    text-align: center;
+} 
+.cardImage{
+    width: 100%;
+}
+.cardFlowerName{
+    font-weight: 500;
+    font-size: 1.375rem;
+    margin: 20px 0px;
+}
+.cardPrice{
+    font-weight: 700;
+    font-size: 1.375rem;
+    margin: 20px 0px;
+}
+.cardButton{
+    background-color:  #E95A08;
+    border: none;
+    padding: 10px 50px;
+}
+
+.cardAnchor{
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+
+
+
+/* media queries started here */
+/* media queries 1200px started here */
+
+@media screen and (max-width:1200px) {
+    .bannerTitle{
+        font-size: 3rem;
+    }
+    .sectionMargin{
+        margin-top: 40px;
+        margin-bottom: 70px;
+    }
+}
+/* media query for 992px */
+@media screen and (max-width:992px) {
+    .bannerTitle{
+        font-size: 2.75rem;
+    }
+
+    .ourPlantTitle{
+        font-size: 3rem;
+    }
+    .bannerDescription, .ourPlantDescription{
+        font-size: 1.2rem;
+    }
+    .cardPrice, .cardFlowerName{
+        margin: 12px 0px;
+        font-size: 1.2rem;
+    }
+    .cardButton{
+        padding: 7px 25px;
+    }
+}
+
+
+
+/* media query for 772px started here */
+@media screen and (max-width:772px) {
+    .logo{
+        max-width: 70%;
+    }
+    .navSection ul{
+        display: none;
+    }
+    .bannerTitle {
+        font-size: 2.25rem;
+    }
+    .bannerDescription, .ourPlantDescription {
+        font-size: 1.1rem;
+    }
+    .bannerSection{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: left;
+    }
+    .bannerContent{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .sectionMargin{
+        margin-top: 20px;
+        margin-bottom: 70px;
+    }
+    .ourPlantTitle {
+        font-size: 2.25rem;
+    }
+    .cardFlowerName {
+        font-size: 1.1rem;
+    }
+    .cardPrice{
+        font-size: 1.1rem;
+    }
+    .cardButton{
+        padding: 5px 18px;
+    }
+    .cardAnchor{
+        font-size: .75rem;
+    }
+}
+
+/* media query for 576px */
+@media screen and (max-width:576px) {
+    .bannerTitle{
+        font-size: 2rem;
+    }
+    .bannerDescription, .ourPlantDescription{
+        font-size: 1rem;
+    }
+    .sectionMargin{
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    .cardsSection{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cardFlowerName {
+        font-size: 1rem;
+    }
+    .cardPrice {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+/* media query for 395 */
+
+@media screen and (max-width:395px) {
+    .bannerTitle{
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    .sectionMargin{
+        margin-top: 20px;
+        margin-bottom: 70px;
+    }
+    .ourPlantTitle{
+        font-size: 2rem;
+    }
+}
