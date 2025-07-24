@@ -147,6 +147,45 @@ box-sizing: border-box;
     font-size: 1rem;
     text-decoration: none;
 }
+    /* card section end */
+    /* flower lover section started */
+.flowerLover{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+.folowerloverDivOne, .flowerLoverDivTwo{
+    width: 50%;
+}
+.folowerloverDivOne{
+    position: relative;
+}
+.flowerLoverImage{
+    width: 100%;
+    object-fit: cover;
+}
+.bandageImage {
+    position: absolute;
+    top: -100px;
+    right: -75px;
+    width: 220px;
+    height: auto;
+}
+
+
+.folweLoverTitle{
+    font-weight: 700;
+    font-size: 3.125rem;
+    color: #000000;
+}
+.folwerLoverList{
+    font-weight: 400;
+    font-size: 1.375rem;
+    margin:20px 0px 20px 50px;
+}
+
+
+
 
 
 
@@ -162,6 +201,18 @@ box-sizing: border-box;
         margin-top: 40px;
         margin-bottom: 70px;
     }
+    .bandageImage {
+        top: -90px;
+        right: -65px;
+        width: 200px;
+    }
+    .folweLoverTitle {
+        font-size: 3rem;
+    }
+    .folwerLoverList {
+        font-size: 1.25rem;
+    }
+    
 }
 /* media query for 992px */
 @media screen and (max-width:992px) {
@@ -181,6 +232,28 @@ box-sizing: border-box;
     }
     .cardButton{
         padding: 7px 25px;
+    }
+    .flowerLover{
+        flex-direction: column;
+    }
+    .folowerloverDivOne, .flowerLoverDivTwo{
+    width: 100%;
+}
+
+    .bandageImage {
+        top: -85px;
+        right: -60px;
+        width: 185px;
+    }
+    .folweLoverTitle {
+        font-size: 2.5rem;
+    }
+    .folwerLoverList {
+        font-size: 1.15rem;
+    }
+    .folwerLoverList li{
+        margin: 30px;
+        line-height: 2.35rem;
     }
 }
 
@@ -251,6 +324,19 @@ box-sizing: border-box;
     .cardPrice {
         font-size: 1rem;
     }
+    .bandageImage{
+        display: none;
+    }
+    .folweLoverTitle {
+        font-size: 1.80rem;
+    }
+    .folwerLoverList {
+        font-size: 1.1rem;
+    }
+    .folwerLoverList li {
+        margin: 15px;
+        line-height: 1.75rem;
+    }
 }
 
 
@@ -270,5 +356,15 @@ box-sizing: border-box;
     }
     .ourPlantTitle{
         font-size: 2rem;
+    }
+    .folweLoverTitle {
+        font-size: 1.75rem;
+    }
+    .folwerLoverList {
+        font-size: .90rem;
+    }
+    .folwerLoverList li {
+        margin: 15px;
+        line-height: 1.5rem;
     }
 }
