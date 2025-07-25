@@ -268,6 +268,7 @@ body{
 }
 .joinImageInput{
     width:100%;
+    height: 400px;
     object-fit: cover;
     filter: brightness(90%);
     display: block;
@@ -320,8 +321,34 @@ body{
     /* footer section start */
 .footerContainer{
     display: grid;
-    grid-template-columns: repeat(4, 3fr, 1fr, 1fr, 3fr);
+    grid-template-columns: repeat(4, 1fr);
+    padding: 50px 0px 50px 0px;
+    gap: 20px;
+    align-items: center;
 }
+.footerDescription{
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+.footerAnchor a, .footerSittings a{
+    text-decoration: none;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: #6B7280;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 35px 10px;
+}
+.footerBox{
+    display: flex;
+    gap: 35px;
+}
+.footerSocialMediaLogo{ 
+    margin-bottom: 185px;
+} 
 
 
 
@@ -473,6 +500,22 @@ body{
     .joinInputSectionTitle {
         font-size: 2rem;
     }
+    .footerBox{
+        gap: 10px;
+    }
+    .footerContainer{
+        grid-template-columns: none;
+        gap: 0px;
+    }
+    .footerAnchor{
+        margin-top: 10px;
+    }
+    .footerAnchor a, .footerSittings a{
+        margin: 25px 10px;
+    }
+    .footerSocialMediaLogo {
+    margin-bottom: 0px;
+    }
 }
 
 /* media query for 576px */
@@ -519,15 +562,21 @@ body{
         font-size: 1.15rem;
         margin-bottom: 10px;
     }
+    .joinColourful {
+    margin-top: 45px;
+}
     .shopCardContentAnchor, .rightcardAnchor {
         font-size: 1.15rem;
     }
     .subscribeBox{
-        width:350px;
-        height: 35px;
+        width: 335px;
+        height: 30px;
     }
     .joinInputSectionTitle {
         font-size: 1.75rem;
+    }
+    .footerSocialMediaLogo {
+    margin-bottom: 0px;
     }
 }
 
@@ -568,5 +617,8 @@ body{
     .subscribeBox {
         width: 330px;
         height: 30px;
+    }
+    .footerSocialMediaLogo {
+    margin-bottom: 0px;
     }
 }
