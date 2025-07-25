@@ -257,9 +257,71 @@ body{
     font-size: 1.75rem;
     color: white;
 }
+    /* shop now section end */
+    /* join color full section started */
+.joinContainer{
+    position: relative;
+    overflow: hidden;
+}
+.joinColourful{
+    margin-top: 100px;
+}
+.joinImageInput{
+    width:100%;
+    object-fit: cover;
+    filter: brightness(90%);
+    display: block;
+}
+.joinInputSection{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    justify-content: center;
+    z-index: 1;
+}
+.joinInputSectionTitle{
+    font-weight: 700;
+    font-size: 3.125rem;
+    color: white;
+    margin-bottom: 25px;
+}
 
-
-
+.joinForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+}
+.subscribeBox{
+    display: flex;
+    width: 800px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.subscribeBox input[type="email"] {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.subscribeBox button {
+    background-color: #ea5b0c;
+    color: white;
+    border: none;
+    padding: 0 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    }
+    /* Join color section end */
+    /* footer section start */
+.footerContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 3fr, 1fr, 1fr, 3fr);
+}
 
 
 
@@ -346,6 +408,12 @@ body{
     .shopCardContentAnchor, .rightcardAnchor {
         font-size: 2rem;
     }
+    .subscribeBox{
+        width:550px;
+    }
+    .joinInputSectionTitle {
+        font-size: 2.5rem;
+    }
 }
 
 
@@ -399,6 +467,12 @@ body{
     .shopCardContentAnchor, .rightcardAnchor {
         font-size: 1.5rem;
     }
+    .subscribeBox{
+        width:450px;
+    }
+    .joinInputSectionTitle {
+        font-size: 2rem;
+    }
 }
 
 /* media query for 576px */
@@ -448,6 +522,13 @@ body{
     .shopCardContentAnchor, .rightcardAnchor {
         font-size: 1.15rem;
     }
+    .subscribeBox{
+        width:350px;
+        height: 35px;
+    }
+    .joinInputSectionTitle {
+        font-size: 1.75rem;
+    }
 }
 
 
@@ -483,5 +564,9 @@ body{
     }
     .dealsDescriptions{
         font-size: .90rem;
+    }
+    .subscribeBox {
+        width: 330px;
+        height: 30px;
     }
 }
